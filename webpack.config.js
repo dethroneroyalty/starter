@@ -3,7 +3,7 @@ const nodeExternals = require("webpack-node-externals");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: __dirname + "/run",
+    path: __dirname + "/build",
     filename: "prod.js"
   },
   devtool: "cheap-module-source-map",
