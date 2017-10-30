@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start:dev": "nodemon src/dev",
-    "compile": "gulp compile",
+    "compile": "webpack",
     "start": "node dest/index",
     "precommit": "lint-staged"
   },
