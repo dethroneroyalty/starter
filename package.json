@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start:dev": "nodemon src/dev",
+    "start:dev": "nodemon build/dev",
     "compile": "webpack",
     "start": "node dest/index",
     "precommit": "lint-staged"
