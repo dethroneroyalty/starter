@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "port": "3000",
+  "public": "../public",
+  "mongodb": "mongodb://localhost:27017/something",
+  "session_secret": "super secret key",
+  "redis_host": "localhost"
+}

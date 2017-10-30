@@ -1,0 +1,12 @@
+{
+  "port": "PORT",
+  "mongodb": "MONGODB_URL",
+  "session_secret": "SESSION_SECRET",
+  "redis_host": "REDIS_HOST",
+  "pg": {
+    "host": "PGHOST",
+    "user": "PGUSER",
+    "database": "PGDATABASE",
+    "password": "PGPASSWORD"
+  }
+}
