@@ -2,13 +2,13 @@ import session from "express-session";
 import connectRedis from "connect-redis";
 
 const RedisStore = connectRedis(session);
+const { REDIS_HOST, SESSION_SECRET } = process.env;
 
 export default function setSession(app) {
   const { error } = app.get("logger");
-  const { redis_host, session_secret } = app.get("config");
 
   const store = new RedisStore({
-    host: redis_host,
+    host: REDIS_HOST,
     port: 6379
   });
 
@@ -17,7 +17,7 @@ export default function setSession(app) {
   });
 
   const config = {
-    secret: session_secret,
+    secret: SESSION_SECRET,
     resave: false,
     rolling: true,
     saveUninitialized: false,

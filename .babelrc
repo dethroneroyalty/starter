@@ -4,7 +4,7 @@
       "env",
       {
         "targets": {
-          "node": "8.8"
+          "node": "8.9"
         },
         "useBuiltIns": true
       }
